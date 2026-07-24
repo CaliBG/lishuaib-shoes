@@ -180,6 +180,8 @@ loader.load('cu.stl',
     } else if (shortest === s0.z) {
       geometry.rotateX(-Math.PI / 2);  // Z 最短 → 转到 Y
     }
+    // 再绕竖直轴转 90 度
+    geometry.rotateY(Math.PI / 2);
     // 摆正后居中
     geometry.center();
 
